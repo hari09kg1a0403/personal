@@ -1,10 +1,12 @@
 package com.hari.json;
 
-//import com.hari.json.JsonHandler;
+import org.junit.Test;
 
 public class JsonHandlerTest {
-    JsonHandler jsonHandler = new JsonHandler();
-    public void testIsCheckIfJson(){
+    private JsonHandler jsonHandler = new JsonHandler();
+
+    @Test
+    public void testIsCheckIfJson() {
         jsonHandler.checkIfJson("{jsonAttribute:jsonValue}");
     }
 }
